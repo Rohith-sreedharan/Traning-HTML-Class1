@@ -1,0 +1,41 @@
+*{
+    /* remove the default margin and padding */
+    margin: 0;
+}
+
+body{
+    /* make the body a square of 100% of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* aligning the body to the center of the screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main{
+    /* make it a square of 5cm*/
+    width: 5cm;
+    height: 5cm;
+    background-color: red;
+    /* center it to the screen */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* un comment this code to see magic */
+    /* animation: rotate 6s linear infinite;
+    border-radius: 50%; */
+}
+
+@keyframes rotate{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
